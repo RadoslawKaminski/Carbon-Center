@@ -1,30 +1,35 @@
 h1 {
     text-align: center;
+    font-size: 2rem;
 }
 
 button {
     display: block;
-    width: 200px;
+    width: 80%;
     height: 50px;
     margin: 10px auto;
     background-color: #4CAF50;
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     border: none;
     text-align: center;
 }
+
 button:hover {
     background-color: #45a049;
 }
-.quick-button, .cart-button, .item-button {
+
+.quick-button, .cart-button, .item-button, .element-button {
     display: inline-block;
     margin: 10px;
+    font-size: 1rem;
 }
 
-.quick-button.selected, .cart-button.selected, .item-button.selected {
+.quick-button.selected, .cart-button.selected, .item-button.selected, .element-button.selected {
     opacity: 0.5;
 }
+
 input[type="text"], textarea {
     width: 100%;
     padding: 12px 20px;
@@ -32,6 +37,7 @@ input[type="text"], textarea {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 1rem;
 }
 
 input[type="submit"] {
@@ -42,18 +48,34 @@ input[type="submit"] {
     margin: 8px 0;
     border: none;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-.element-button {
-    display: inline-block;
-    margin: 10px;
-}
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
 
-.element-button.selected {
-    opacity: 0.5;
-}
+    button {
+        height: 80px;
+        font-size: 2rem;
+    }
 
+    .quick-button, .cart-button, .item-button, .element-button {
+        font-size: 2rem;
+    }
+
+    input[type="text"], textarea {
+        padding: 20px 30px;
+        font-size: 2rem;
+    }
+
+    input[type="submit"] {
+        padding: 20px 30px;
+        font-size: 2rem;
+    }
+}
