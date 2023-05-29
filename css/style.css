@@ -55,7 +55,7 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
     h1 {
         font-size: 3rem;
     }
