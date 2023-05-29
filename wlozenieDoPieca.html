@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Włożenie do pieca</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <form id="oven-input">
+        <label for="cart-number">Numer wózka:</label><br>
+        <button type="button" class="cart-button" id="cart1">1</button>
+        <button type="button" class="cart-button" id="cart2">2</button>
+        <button type="button" class="cart-button" id="cart3">3</button>
+        <button type="button" class="cart-button" id="cart4">4</button><br>
+        <label for="time-input">Godzina:</label><br>
+        <input type="time" id="time-input" name="time-input"><br>
+        <input type="checkbox" id="post-injection" name="post-injection" value="PostInjection">
+        <label for="post-injection"> Po wtrysku</label><br>
+        <input type="submit" value="Wyślij">
+    </form>
+    <button onclick="window.location.href='stanowisko1.html'">Powrót</button>
+</body>
+
+</html>
