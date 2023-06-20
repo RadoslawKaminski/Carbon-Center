@@ -54,7 +54,7 @@ body {
     max-width: 28%; /* Aby zapewnić odstęp między kolumnami */
 }
 
-.column-right h2, #damages h2 {
+.column-right h2, #damages h2, #actions h2 {
     text-align: center;
 }
 
@@ -120,7 +120,7 @@ body {
     padding: 6px;
 }
 
-#damages .column-left, #damages .column-right  {
+#damages .column-left, #damages .column-right, #actions .column-left, #actions .column-right  {
     flex: 1;
     max-width: 50%;
     margin: 30px;
