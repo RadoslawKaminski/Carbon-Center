@@ -100,7 +100,7 @@ button.more-button {
 
 @media screen and (max-width: 1024px) {
     .main-container {
-        display: block;
+        flex-direction:column;
     }
 
     .column-left, .column-right {
