@@ -43,6 +43,9 @@ body {
     justify-content: space-between;
     padding: 10px;
 }
+#shopping .main-container {
+    flex-direction:column;
+}
 
 .column-left {
     flex: 1;
@@ -125,7 +128,9 @@ body {
     max-width: 50%;
     margin: 30px;
 }
-
+#shopping .inner-full:first-child {
+    margin-bottom: 30px;
+}
 @media screen and (max-width: 1024px) {
     .main-container {
         flex-direction:column;
