@@ -54,7 +54,7 @@ body {
     max-width: 28%; /* Aby zapewnić odstęp między kolumnami */
 }
 
-.column-right h2 {
+.column-right h2, #damages h2 {
     text-align: center;
 }
 
@@ -70,7 +70,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.inner-left, .inner-right, .inner-shopping {
+.inner-left, .inner-right, .inner-shopping, .inner-full{
     padding: 20px;
     border: 5px solid #4CAF50;
     border-radius: 14px;
@@ -89,35 +89,41 @@ body {
     margin: 10px 0;
 }
 
-.pos-inner table {
+.main-container table {
     border-collapse: separate;
     border-spacing: 0;
     width: 100%;
 }
-.pos-inner table th {
+.main-container table th {
     text-align:left;
     background-color: #4CAF50;
 }
-.pos-inner table th:first-child {
+.main-container table th:first-child {
     border-top-left-radius: 16px;
 }
-.pos-inner table th:last-child {
+.main-container table th:last-child {
     border-top-right-radius: 16px;
 }
-.pos-inner table th, .pos-inner table td {
+.main-container table th, .main-container table td {
     padding: 10px;
     border-right: 1px solid white;
 }
-.pos-inner table td {
+.main-container table td {
     border-right: 1px solid #45a049;
     border-top: 1px solid #45a049;
 }
-.pos-inner table tr td:last-child {
+.main-container table tr td:last-child {
     border-right: none;
 }
 .shopping-list li {
     font-size: 1.25rem;
     padding: 6px;
+}
+
+#damages .column-left, #damages .column-right  {
+    flex: 1;
+    max-width: 50%;
+    margin: 30px;
 }
 
 @media screen and (max-width: 1024px) {
