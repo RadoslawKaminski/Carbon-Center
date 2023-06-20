@@ -1,0 +1,110 @@
+nav {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e7e7e7;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.03);
+    height: 50px;
+    line-height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0 10px 0 10px;
+    margin: 0;
+    list-style: none;
+    background-color: #4CAF50;
+}
+
+nav ul li {
+    display: inline;
+    border-right: 1px solid white;
+    padding: 0 10px;
+}
+
+li:nth-child(1) {
+    border-left: 1px solid white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover {
+    background-color: #45a049;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.column-left {
+    flex: 1;
+    max-width: 70%;
+}
+
+.column-right {
+    flex: 1;
+    max-width: 30%; /* Aby zapewnić odstęp między kolumnami */
+}
+
+.column-right h2 {
+    text-align: center;
+}
+
+.pos-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.column-left h2 {
+    margin-left:20px;
+}
+.pos-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-left, .inner-right {
+    width: 48%;
+    border: 5px solid #4CAF50;
+    padding: 20px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.03);
+    margin: 20px;
+    border-radius: 14px;
+}
+
+.inner-left h3, .inner-right h3, .column-right h3 {
+    margin: 10px 0;
+}
+
+.inner-left a, .inner-right a, .column-right a {
+    display: block;
+    margin: 20px auto 0 auto;
+    text-decoration: none;
+    color: #4CAF50;
+    width: max-content;
+}
+
+button.more-button {
+    width: 120px;
+    height: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    .main-container {
+        display: block;
+    }
+
+    .column-left, .column-right {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
